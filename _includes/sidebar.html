@@ -1,0 +1,64 @@
+<div class="sidebar">
+  <div class="container left-align">
+    <div class="sidebar-about">
+      <div class="sidebar-profile">
+        <img src="{{ site.baseurl }}/public/images/avatar.jpg">
+      </div>
+      <h1>
+        <a href="{{ site.baseurl }}/">
+          {{ site.author.name }}
+        </a>
+      </h1>
+      <div class="sidebar-desc">{{ site.description }}</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a> -->
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% endcomment %}
+
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Post</a></li>
+        <li><a href="{{ site.baseurl }}/resume/">Resume</a></li>
+        <li><a href="{{ site.baseurl }}/project/">Project</a></li>
+        <li><a href="{{ site.baseurl }}/about/">About</a></li>
+      </ul>
+    </nav>
+
+    <ul class="list-inline" id="sidebar-buttons">
+        <li>
+            <a href="mailto:{{ site.author.email }}" class="btn-social btn-outline" title="E-Mail me">
+                <i class="fa fa-fw fa-at"></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.author.github }}" target="_blank" class="btn-social btn-outline" title="satrionugroho on GitHub">
+                <i class="fa fa-fw fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.author.linkedin}}" target="_blank" class="btn-social btn-outline" title="Satrio Nugroho on LinkedIn">
+                <i class="fa fa-fw fa-linkedin"></i>
+            </a>
+        </li>
+
+
+    </ul>
+
+    <p id="credits">&copy; {{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}/credits">Credits</a>.</p>
+  </div>
+</div>
