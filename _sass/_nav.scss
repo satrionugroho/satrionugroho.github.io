@@ -1,0 +1,48 @@
+.sidebar-nav {
+  ul {
+    list-style: none;
+  }
+
+  &_profile{
+    display: flex;
+
+    li{
+      @include margin(0px 8px);
+      @include padding(6px 4px);
+      background: white;
+      border-radius: 50%;
+
+      a {
+        color: inherit;
+
+        &:visited{
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &_links {
+    text-align: right;
+    padding-right: 1rem;
+
+    li{
+      @include padding(4px null 8px);
+
+      a {
+        color: $white;
+        font-weight: bolder;
+        font-family: $helvetica;
+        font-size: $font-size * 1.2;
+
+        @media (min-width: $large-device){
+          font-size: $font-size * 1.5;
+        }
+      }
+    }
+
+    @media (min-width: $large-device){
+      padding-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+code, pre {
+  font-family: Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
+  color: $green;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include margin(0);
+  @include padding(0);
+  font-family: $helvetica;
+}
+
+a {
+  text-decoration: none;
+}

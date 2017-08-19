@@ -1,0 +1,21 @@
+.theme{
+  &-blue{
+    background: $blue;
+
+    #sidebar-buttons{
+      li {
+        color: $blue;
+      }
+    }
+  }
+
+  &-green{
+    background: $green;
+
+    #sidebar-buttons{
+      li {
+        color: $green;
+      }
+    }
+  }
+}

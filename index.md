@@ -1,7 +1,4 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Home
 ---
@@ -17,3 +14,17 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}/{% if paginator.page > 2 %}page{{paginator.previous_page}}{% endif %}">
+      <i class="fa fa-arrow-left"></i> Newer
+   </a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">
+      Older <i class="fa fa-arrow-right"></i>
+    </a>
+  {% endif %}
+</div>
