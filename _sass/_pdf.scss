@@ -1,0 +1,16 @@
+.pdf_container{
+  h1 {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding-top: 1rem;
+    text-align: center;
+
+    a {
+      color: $grey;
+    }
+  }
+  object {
+    height: 500px !important;
+  }
+}

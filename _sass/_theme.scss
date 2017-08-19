@@ -1,21 +1,98 @@
 .theme{
   &-blue{
-    background: $blue;
+
+    .sidebar{
+      background: $blue;
+    }
 
     #sidebar-buttons{
       li {
         color: $blue;
       }
     }
+
+    .throwable > a {
+      color: $blue;
+    }
   }
 
   &-green{
-    background: $green;
+    .sidebar{
+      background: $green;
+    }
 
     #sidebar-buttons{
       li {
         color: $green;
       }
+    }
+
+    .throwable > a {
+      color: $green;
+    }
+  }
+
+  &-purple{
+    .sidebar{
+      background: $purple;
+    }
+
+    #sidebar-buttons{
+      li {
+        color: $purple;
+      }
+    }
+
+    .throwable > a {
+      color: $purple;
+    }
+  }
+
+  &-lime{
+    .sidebar{
+      background: $lime;
+    }
+
+    #sidebar-buttons{
+      li {
+        color: $lime;
+      }
+    }
+
+    .throwable > a {
+      color: $lime;
+    }
+  }
+
+  &-black{
+    .sidebar{
+      background: $black;
+    }
+
+    #sidebar-buttons{
+      li {
+        color: $black;
+      }
+    }
+
+    .throwable > a {
+      color: $black;
+    }
+  }
+
+  &-red{
+    .sidebar{
+      background: $red;
+    }
+
+    #sidebar-buttons{
+      li {
+        color: $red;
+      }
+    }
+
+    .throwable > a {
+      color: $red;
     }
   }
 }

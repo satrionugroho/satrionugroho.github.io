@@ -9,17 +9,17 @@ html, body {
   @include padding(4px 8px);
 
   @media (min-width: $small-device){
-    @include padding(1rem 1rem 4rem 24rem);
+    @include padding(4rem 1rem 4rem 24rem);
     height: calc(100% - 23rem);
   }
 
   @media (min-width: $medium-device){
-    @include padding(2rem 2rem 4rem 27rem);
+    @include padding(5rem 2rem 4rem 27rem);
     height: calc(100% - 25rem);
   }
 
   @media (min-width: $large-device){
-    @include padding(4rem 4rem 8rem 32rem);
+    @include padding(7rem 4rem 8rem 32rem);
     height: calc(100% - 30rem);
   }
 }
@@ -95,4 +95,12 @@ html, body {
 
 .container {
   @include size(null 100%);
+}
+
+.credits {
+  @include padding(1rem);
+
+  a {
+    color: white;
+  }
 }
