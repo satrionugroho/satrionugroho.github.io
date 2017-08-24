@@ -37,15 +37,15 @@ pdfs:           '/public/pdf'
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jemoji
+
+safe: false
 
 sass:
   style: compressed
 
 paginate:       3
 permalink:      /posts/:categories/:title/
-
-gems:
-  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
