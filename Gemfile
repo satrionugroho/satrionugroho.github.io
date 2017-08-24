@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'bourbon'
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate"
+  gem 'github-pages'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

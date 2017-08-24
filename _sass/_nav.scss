@@ -7,10 +7,14 @@
     display: flex;
 
     li{
-      @include margin(0px 8px);
-      @include padding(6px 4px);
+      margin: 0px 8px;
+      padding: 6px 4px;
       background: white;
       border-radius: 50%;
+
+      @media (min-width: $large-device){
+        margin: 3em 1.5em;
+      }
 
       a {
         color: inherit;
@@ -27,7 +31,8 @@
     padding-right: 1rem;
 
     li{
-      @include padding(4px null 8px);
+      padding-top: 4px;
+      padding-bottom: 8px;
 
       a {
         color: $white;

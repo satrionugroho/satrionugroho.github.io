@@ -10,7 +10,20 @@
       color: $grey;
     }
   }
+
   object {
-    height: 500px !important;
+    height: 50px;
+
+    @media (min-width: $small-device){
+      height: 500px;
+    }
+
+    @media (min-width: $medium-device){
+      height: 700px;
+    }
+
+    @media (min-width: $large-device){
+      height: 1100px;
+    }
   }
 }

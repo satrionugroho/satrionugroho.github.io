@@ -1,12 +1,18 @@
 html, body {
-  @include margin(0);
-  @include padding(0);
-  @include size(100%);
-  @include clearfix();
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+
+  &::after{
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 
 .content{
-  @include padding(4px 8px);
+  padding: 4px 8px;
 
   @media (min-width: $small-device){
     @include padding(4rem 1rem 4rem 24rem);
@@ -25,15 +31,16 @@ html, body {
 }
 
 .sidebar {
-  @include size(100%);
-  @include padding(null 1rem);
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
   // background: $blue;
 
   &-about{
     text-align: right;
 
     h1 {
-      @include padding(8px 1rem 12px);
+      padding: 8px 1rem 12px;
       color: $white;
       font-size: 56px;
       font-weight: bolder;
@@ -55,50 +62,50 @@ html, body {
   }
 
   &-desc{
-    @include padding(16px 1rem 12px 8px);
+    padding: 16px 1rem 12px 8px;
     font-size: 26px;
     text-align: left;
     font-family: $helvetica;
     color: $transparent-white;
 
     @media (min-width: $large-device){
-      @include padding(1.5rem 2rem 1rem 1.5rem);
+      padding: 1.5rem 2rem 1rem 1.5rem;
       font-size: 20px;
     }
   }
 
   &-profile{
-    @include size(100%);
-    @include padding(1rem 0px);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0px;
     text-align: center;
 
     @media (min-width: $large-device){
-      @include padding(3rem 0px);
+      padding: 3rem 0px;
     }
   }
 
   @media (min-width: $small-device){
-    @include size(20rem 100vh);
+    width: 20rem;
+    height: 100vh;
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
   }
 
   @media (min-width: $medium-device){
-    @include size(24rem 100vh);
+    width: 24rem;
+    height: 100vh;
   }
 
   @media (min-width: $large-device){
-    @include size(28rem 100vh);
+    width: 28rem;
+    height: 100vh;
   }
 }
 
-.container {
-  @include size(null 100%);
-}
-
 .credits {
-  @include padding(1rem);
+  padding: 1rem;
 
   a {
     color: white;
