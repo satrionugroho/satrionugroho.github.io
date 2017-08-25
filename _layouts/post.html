@@ -3,6 +3,8 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title | markdownify }}</h1>
-  {{ content }}
+  <article>
+    <h1 class="post-title">{{ page.title | markdownify }}</h1>
+    {{ content }}
+  </article>
 </div>

@@ -1,0 +1,18 @@
+.projects{
+
+  &_post{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  &_title{
+    font-size: 2rem;
+
+    small{
+      color: $grey;
+      display: block;
+      font-weight: 200;
+      font-size: 1.4rem;
+    }
+  }
+}

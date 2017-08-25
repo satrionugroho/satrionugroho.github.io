@@ -38,6 +38,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
+  - jekyll-minifier
 
 safe: false
 
@@ -46,6 +47,10 @@ sass:
 
 paginate:       3
 permalink:      /posts/:categories/:title/
+
+collections:
+  projects:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

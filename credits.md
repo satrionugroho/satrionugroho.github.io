@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Site Credits
 permalink: /credits/
 ---
