@@ -1,0 +1,3 @@
+User-agent: BadBot
+Disallow: /projects
+Disallow: /resume
