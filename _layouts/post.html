@@ -7,4 +7,11 @@ layout: default
     <h1 class="post-title">{{ page.title | markdownify }}</h1>
     {{ content }}
   </article>
+  <div class="tags">
+    {% for skill in page.skills %}
+    <span id="{{ skill }}" class="post_tags">
+       {{ skill }}
+    </span>
+    {% endfor %}
+  </div>
 </div>
