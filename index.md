@@ -3,17 +3,20 @@ layout: default
 title: Home
 ---
 
-<ul class="posts">
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h2 class="throwable">
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-    </li>
+  <div class="posts_item">
+    <h1 class="posts_item_title throwable">
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h1>
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <span class="posts_item_meta">{{ post.date | date: date_format }}</span>
+    <div class="posts_item_description throwable">
+      {{ post.description }}
+    </div>
+  </div>
   {% endfor %}
-</ul>
+</div>
 
 <div class="pagination">
   {% if paginator.previous_page %}

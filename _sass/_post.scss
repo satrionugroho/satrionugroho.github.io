@@ -1,6 +1,7 @@
 .post {
   margin: 0px;
   padding: 0px;
+  margin-bottom: 2rem;
 
   article {
     margin: 0px .5rem;
@@ -47,6 +48,31 @@
       text-shadow: 0 0 1px #aaa;
       border-left:1px solid #C7D2D4;
       border-bottom:1px solid #C7D2D4;
+    }
+  }
+}
+
+.posts {
+  margin: 0;
+  padding: 0;
+
+  &_item {
+    padding: 0;
+    margin-bottom: 3rem;
+
+    &_title {
+      margin-bottom: .5rem;
+    }
+
+    &_meta {
+      color: $grey;
+      font-size: 18px;
+    }
+
+    &_description {
+      font-size: 20px;
+      margin-top: .7rem;
+      text-align: justify;
     }
   }
 }
