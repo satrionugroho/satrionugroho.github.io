@@ -32,7 +32,6 @@ function initializeFirstColor() {
 
 function updateColor(){
   var counter = localStorage.getItem("satrioColorScheme");
-  console.log(counter);
   var currentScheme = (counter == colors.length-1) ? 0 : parseInt(counter) + 1;
 
   document.body.className = changeTheme(currentScheme);
@@ -41,9 +40,9 @@ function updateColor(){
 
 window.onload = loadColorIfPresent;
 
-document.addEventListener("DOMContentLoaded", function(){
-  var elem = document.getElementById("themeChange");
-  elem.addEventListener('click', function(){
-    updateColor();
-  });
-}, false);
+// document.addEventListener("DOMContentLoaded", function(){
+//   var elem = document.getElementById("themeChange");
+//   elem.addEventListener('click', function(){
+//     updateColor();
+//   });
+// }, false);
